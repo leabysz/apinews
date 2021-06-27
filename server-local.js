@@ -3,7 +3,7 @@ const express = require('express');
 const schedule = require('node-schedule');
 
 const app = express();
-const port = 3000;
+const port = 80;
 const newsApiRoute = 'http://newsapi.org/v2/everything?q=rich&sortBy=publishedAt&apiKey=';
 const newsApiKey = '6633de5b30b74366b611995131df0058';
 
