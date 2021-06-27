@@ -2,8 +2,10 @@
   "name": "myapp",
   "version": "0.0.0",
   "private": true,
+  "main": "server-local.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "build": "netlify-lambda build express",
+    "start": "nodemon server-local.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -12,7 +14,9 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
+    "netlify-lambda": "^2.0.10",
     "node-schedule": "^2.0.0",
+    "nodemon": "^2.0.7",
     "pug": "2.0.0-beta11"
   }
 }
