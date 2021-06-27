@@ -20,7 +20,7 @@ app.listen(port, () => {
 });
 
 //cada 'N minutos guarda el valor en la variable newData
-const getNewsJob = schedule.scheduleJob('13 * * * *', function () {
+const getNewsJob = schedule.scheduleJob('17 * * * *', function () {
     console.log('Trae las noticias cada 1 minuto')
     axios.get(`${newsApiRoute}${newsApiKey}`)
       .then((response) => newsData=response.data)
